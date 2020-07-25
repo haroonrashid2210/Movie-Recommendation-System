@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Acknowledgement</title>
+</head>
+
+<body>
+    <h4>These are the data from page1.html.</h4>
+    <script>
+
+        var queryString = decodeURIComponent(window.location.search);
+        var queries = queryString.split("=");
+        document.write(queries[1])
+
+
+    </script>
+</body>
+
+</html>
