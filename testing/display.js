@@ -19,6 +19,7 @@ request.onload = function () {
     data.results.forEach((movie) => {
       const card = document.createElement("div");
       card.setAttribute("class", "card");
+      console.log(data);
 
       const h1 = document.createElement("h1");
       h1.textContent = movie.title;

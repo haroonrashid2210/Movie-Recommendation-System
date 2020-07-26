@@ -8428,3 +8428,8 @@ footer.full-width-ft .ft-copyright {
   width: 85%;
   margin-left: 8%;
 }
+
+/* movie poster in movie detail page in similar movie tab */
+#movie_similar_list div.movie-item-style-2 img {
+  width: 165px;
+}

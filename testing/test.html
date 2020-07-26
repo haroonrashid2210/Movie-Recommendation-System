@@ -15,4 +15,38 @@
     <script src="display.js"></script>
 </body>
 
+<script>
+    var requests = new Array();
+
+    function ProcessUrls() {
+        requests = new Array();
+        var urls = new Array('https://api.themoviedb.org/3/movie/385103/reviews?api_key=c9aeb176ddbedf1360223c8457d2bfe1&language=en-US&page=1', 'https://api.themoviedb.org/3/movie/385103/credits?api_key=c9aeb176ddbedf1360223c8457d2bfe1');
+
+        for (i = 0; i < urls.length; i++) {
+            requests.push(new ProcessUrl(urls[i]));
+        }
+
+    }
+
+    function ProcessUrl(url) {
+
+        var http = new XMLHttpRequest();
+
+        http.open("GET", url, true);
+
+        http.onreadystatechange = function () {
+            if (http.readyState == 4 && http.status == 200) {
+                // alert(http.responseText);
+                console.log("GET requests")
+            }
+        };
+
+        http.send(null);
+
+    }
+
+    ProcessUrls();
+
+</script>
+
 </html>
