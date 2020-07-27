@@ -78,8 +78,6 @@ request.onload = function () {
 
       // adding main div to app
       app.appendChild(main_div);
-
-      console.log(anchor.getAttribute("data-movieId"));
     });
   } else {
     const errorMessage = document.createElement("marquee");

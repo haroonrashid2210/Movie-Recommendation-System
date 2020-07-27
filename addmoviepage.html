@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add movie</title>
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600' />
+</head>
+<style>
+    body {
+        background: #020d18;
+        margin: 0;
+        font-family: "Dosis", sans-serif;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 10vh 35% 0 35%;
+        padding: 50px;
+        background: white;
+    }
+    input {
+        margin: 10px 0;
+        padding: 5px;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type='submit']{
+        background: #dd003f;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        color: white;
+    }
+</style>
+<body>
+    <form method="POST" action="http://localhost/MRS/php/addmovie.php">
+        <h1>ADD MOVIE</h1>
+        <label for="username">USERNAME</label>
+        <input name="username" type="text" placeholder="Username" pattern="^[a-z](\.?[a-z0-9]){4,}$" required="required">
+        <label for="password">PASSWORD</label>
+        <input name="password" type="password" placeholder="Password" pattern="^[a-zA-Z0-9]*$" required="required">
+        <label for="movie_name">MOVIE NAME</label>
+        <input name="movie_name" type="text" placeholder="Movie Name" required="required">
+        <label for="movie_id">MOVIE ID</label>
+        <input name="movie_id" type="text" placeholder="Movie ID" required="required">
+        <input type="submit" value="ADD">
+    </form>
+</body>
+</html>
