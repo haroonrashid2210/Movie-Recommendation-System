@@ -1,6 +1,6 @@
 # Movie Review Website
 ### About
-We are making movie based websites like IMDB and rotten tomatoes. The site will use the movies data
+The system is movie based websites like IMDB and rotten tomatoes. The site will use the movies data
 set and perform different functionalities. The website will show a list of movies along with their posters
 on its main web page. The site will allow user registration and will keep a record of user information.
 The website will also hold the features of movie rating, wish list, watched list.
